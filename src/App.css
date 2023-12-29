@@ -1,38 +1,109 @@
-.App {
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:"Poppins", sans-serif;
+
+}
+html{
+  font-size: 90%;
+}
+body {
+  background-color: #212121;
+  background-image: url('./background.jpg');
+  background-size: cover; 
+  background-position: center;
+  width: 100vw; 
+  height: 100vh;
+  overflow-y: auto; 
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 3.2 rem;
+  margin: 2rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.4 rem;
+}
+span{
+  text-transform: capitalize;
+  font-weight: bold;
+  
+}
+p{
+  padding: 0.5rem;
+  margin:2 rem 0;
+  font-weight: 400;
+  font-size: 1.6 rem;
+  display: inline-block;
+}
+.stories-div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  gap:4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  min-width: 20 rem;
+  width :50vw;
+  padding :2rem;
+  background-color:#ffffff;
+  border-radius: 0.5 rem;
+  color:black;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-button{
+  padding: 0.5rem;
+  flex-direction: row;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  background-color: #009688; 
+  color: #FFFFFF; 
+   
+  
+}
+
+.card-button a {
+  color:white;
+  font-weight: 400;
+  font-size: 1.6 rem;
+
+}
+
+form{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.large-input {
+  width: 300px; 
+  height: 40px; 
 }
+.pagination_btn{
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.pagination_btn button {
+  background-color: white;
+  color: black; 
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  outline: black;
+}
+.paginationText {
+  color: #ffffff; 
 }
